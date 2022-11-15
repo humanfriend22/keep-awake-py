@@ -27,9 +27,7 @@ userMovedCounter = 0
 try:
         
     while True:
-        current_pos = position()
-
-        userMoved = current_pos not in accepted_positions
+        userMoved = position() not in accepted_positions
 
         if userMoved:
             userMovedCounter += 1
